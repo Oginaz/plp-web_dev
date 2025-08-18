@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header, footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: auto;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Pwani Hotel</h1>
+    <p>Experience the best hospitality and delicious food!</p>
+</header>
+
+<section>
+    <h2>Hotel Overview</h2>
+    <video controls>
+        <source src=" " type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<section>
+    <h2>Food Menu</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Dish</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Biryani</td>
+                <td>Aromatic rice dish cooked with spices and marinated meat.</td>
+                <td>Ksh 450</td>
+            </tr>
+            <tr>
+                <td>Shawarma</td>
+                <td>Grilled meat wrapped in pita bread with fresh vegetables and sauces.</td>
+                <td>Ksh 300</td>
+            </tr>
+            <tr>
+                <td>Pilau</td>
+                <td>Spiced rice dish with meat and vegetables.</td>
+                <td>Ksh 350</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Feedback Form</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Your Feedback</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required minlength="2" autocomplete="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"><br><br>
+
+            <label for="meal">Meal Ordered:</label>
+            <select id="meal" name="meal" required>
+                <option value="">Select a meal</option>
+                <option value="Biryani">Biryani</option>
+                <option value="Shawarma">Shawarma</option>
+                <option value="Pilau">Pilau</option>
+            </select><br><br>
+
+            <label for="rating">Rate Your Experience:</label>
+            <select id="rating" name="rating" required>
+                <option value="">Select a rating</option>
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select><br><br>
+
+            
+        </fieldset>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Pwani Hotel. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
